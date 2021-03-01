@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-4" *ngFor="let element of Data.results">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"> {{element.name}} </h5>
+                    <p class="card-text"> <a href="{{ element.url}}" target="_blank">{{ element.url}}</a> </p>
+                    <button class="btn btn-primary" (click)="showPoke(element.name)" >Ver Descripcion</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
